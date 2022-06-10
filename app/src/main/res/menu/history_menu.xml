@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="Delete"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mi_share"
+        android:icon="@drawable/ic_share"
+        android:title="Share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mi_rate_us"
+        android:icon="@drawable/ic_rate"
+        android:title="Rate us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mi_privacy"
+        android:icon="@drawable/ic_privacy"
+        android:title="Privacy Policy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mi_feedback"
+        android:icon="@drawable/ic_feedback"
+        android:title="Feedback"
+        app:showAsAction="never" />
+</menu>

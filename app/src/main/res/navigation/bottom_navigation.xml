@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/miCalculator"
+        android:name="workout.home.homeworkout.ui.fragment.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator">
+        <action
+            android:id="@+id/action_calculatorFragment_to_homeFragment2"
+            app:destination="@id/miHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/miHistory"
+        android:name="workout.home.homeworkout.ui.fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history">
+        <action
+            android:id="@+id/action_historyFragment_to_homeFragment2"
+            app:destination="@id/miHome" />
+        <action
+            android:id="@+id/action_miHistory_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/miHome"
+        android:name="workout.home.homeworkout.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment2_to_calculatorFragment"
+            app:destination="@id/miCalculator" />
+        <action
+            android:id="@+id/action_homeFragment2_to_historyFragment"
+            app:destination="@id/miHistory" />
+        <action
+            android:id="@+id/action_miHome_to_absFragment"
+            app:destination="@id/absFragment" />
+        <action
+            android:id="@+id/action_miHome_to_chestFragment"
+            app:destination="@id/chestFragment" />
+        <action
+            android:id="@+id/action_miHome_to_armsFragment"
+            app:destination="@id/armsFragment" />
+        <action
+            android:id="@+id/action_miHome_to_backFragment"
+            app:destination="@id/backFragment" />
+        <action
+            android:id="@+id/action_miHome_to_legFragment"
+            app:destination="@id/legFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/absFragment"
+        android:name="workout.home.homeworkout.ui.fragment.AbsFragment"
+        android:label="fragment_abs"
+        tools:layout="@layout/fragment_abs">
+        <action
+            android:id="@+id/action_absFragment_to_miHome"
+            app:destination="@id/miHome" />
+        <action
+            android:id="@+id/action_absFragment_to_absExerciseFragment"
+            app:destination="@id/absExerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/absExerciseFragment"
+        android:name="workout.home.homeworkout.ui.fragment.AbsExerciseFragment"
+        android:label="fragment_abs_exercise"
+        tools:layout="@layout/fragment_abs_exercise">
+        <action
+            android:id="@+id/action_absExerciseFragment_to_absFragment"
+            app:destination="@id/absFragment" />
+        <action
+            android:id="@+id/action_absExerciseFragment_to_finishFragment"
+            app:destination="@id/finishFragment"
+            app:popUpTo="@+id/absExerciseFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="workout.home.homeworkout.ui.fragment.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish">
+
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="workout.home.homeworkout.ui.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_miHome"
+            app:destination="@id/miHome"
+            app:popUpTo="@+id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/chestFragment"
+        android:name="workout.home.homeworkout.ui.fragment.ChestFragment"
+        android:label="fragment_chest"
+        tools:layout="@layout/fragment_chest">
+        <action
+            android:id="@+id/action_chestFragment_to_chestExerciseFragment"
+            app:destination="@id/chestExerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chestExerciseFragment"
+        android:name="workout.home.homeworkout.ui.fragment.ChestExerciseFragment"
+        android:label="fragment_chest_exercise"
+        tools:layout="@layout/fragment_chest_exercise">
+        <action
+            android:id="@+id/action_chestExerciseFragment_to_finishFragment"
+            app:destination="@id/finishFragment"
+            app:popUpTo="@+id/chestExerciseFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/armsFragment"
+        android:name="workout.home.homeworkout.ui.fragment.ArmsFragment"
+        android:label="fragment_arms"
+        tools:layout="@layout/fragment_arms">
+        <action
+            android:id="@+id/action_armsFragment_to_armsExerciseFragment"
+            app:destination="@id/armsExerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/armsExerciseFragment"
+        android:name="workout.home.homeworkout.ui.fragment.ArmsExerciseFragment"
+        android:label="fragment_arms_exercise"
+        tools:layout="@layout/fragment_arms_exercise">
+        <action
+            android:id="@+id/action_armsExerciseFragment_to_finishFragment"
+            app:destination="@id/finishFragment"
+            app:popUpTo="@+id/armsExerciseFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/backFragment"
+        android:name="workout.home.homeworkout.ui.fragment.BackFragment"
+        android:label="fragment_back"
+        tools:layout="@layout/fragment_back">
+        <action
+            android:id="@+id/action_backFragment_to_backExerciseFragment"
+            app:destination="@id/backExerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/backExerciseFragment"
+        android:name="workout.home.homeworkout.ui.fragment.BackExerciseFragment"
+        android:label="fragment_back_exercise"
+        tools:layout="@layout/fragment_back_exercise">
+        <action
+            android:id="@+id/action_backExerciseFragment_to_finishFragment"
+            app:destination="@id/finishFragment"
+            app:popUpTo="@+id/backExerciseFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/legFragment"
+        android:name="workout.home.homeworkout.ui.fragment.LegFragment"
+        android:label="fragment_leg"
+        tools:layout="@layout/fragment_leg">
+        <action
+            android:id="@+id/action_legFragment_to_legExerciseFragment"
+            app:destination="@id/legExerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/legExerciseFragment"
+        android:name="workout.home.homeworkout.ui.fragment.LegExerciseFragment"
+        android:label="fragment_leg_exercise"
+        tools:layout="@layout/fragment_leg_exercise">
+        <action
+            android:id="@+id/action_legExerciseFragment_to_finishFragment"
+            app:destination="@id/finishFragment"
+            app:popUpTo="@+id/legExerciseFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="workout.home.homeworkout.ui.fragment.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+</navigation>
