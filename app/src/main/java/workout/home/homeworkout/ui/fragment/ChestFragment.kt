@@ -62,7 +62,7 @@ class ChestFragment : Fragment() {
     private fun toolBarSetUp() {
         (activity as AppCompatActivity).setSupportActionBar(binding.toolbarChestFragment)
         if ((activity as AppCompatActivity).supportActionBar != null) {
-            binding.toolbarChestFragment.title = "Abs Workout"
+            binding.toolbarChestFragment.title = "Chest Workout"
             (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
             (activity as AppCompatActivity).supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
         }
