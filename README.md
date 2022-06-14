@@ -17,7 +17,7 @@ Screenshots:
  
  * Various workouts<br/>
  * Track your History<br/>
- * Calculate you BMI(TTS)<br/>
+ * Calculate your BMI(TTS)<br/>
  * Voice Guidence <br/>
  
  Library and Technology used :
