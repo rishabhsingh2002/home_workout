@@ -13,23 +13,23 @@ Screenshots:
  </table>
  
  
-  Functionalies :
+  Features :
  
  * Various workouts<br/>
  * Track your History<br/>
  * Calculate you BMI(TTS)<br/>
  * Voice Guidence <br/>
  
- Features:
+ Library and Technology used :
  
  * Made using Kotlin and XML<br/>
  * Single Activity app<br/>
  * Text to Speech(TTS)<br/>
-* Room Database <br/>
-* Countdown Timer<br/>
-* Firebase Firestore , Storage <br/>
-* Custom Dialog<br/>
-* Recyclerview <br/>
-* One Signal for Notifications<br/>
-* Glide <br/>
-* View Binding<br/>
+ * Room Database <br/>
+ * Countdown Timer<br/>
+ * Firebase Firestore , Storage <br/>
+ * Custom Dialog<br/>
+ * Recyclerview <br/>
+ * One Signal for Notifications<br/>
+ * Glide <br/>
+ * View Binding<br/>
