@@ -17,8 +17,8 @@ Screenshots:
  
  * Various workouts<br/>
  * Track your History<br/>
- * Calculate your BMI(TTS)<br/>
- * Voice Guidence <br/>
+ * Calculate your BMI<br/>
+ * Voice Guidence(TTS) <br/>
  
  Library and Technology used :
  
@@ -31,5 +31,5 @@ Screenshots:
  * Custom Dialog<br/>
  * Recyclerview <br/>
  * One Signal for Notifications<br/>
- * Glide <br/>
+ * Glide For Image Loading <br/>
  * View Binding<br/>
